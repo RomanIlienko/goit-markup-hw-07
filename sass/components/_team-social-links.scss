@@ -9,15 +9,15 @@
   border-radius: 50%;
   transition: background-color var(--time) var(--animation-style),
     fill var(--time) var(--animation-style);
-}
 
-.developers-social-links:focus,
-.developers-social-links:hover {
-  fill: var(--second-txt-bcg-color);
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  &:focus,
+  &:hover {
+    fill: var(--second-txt-bcg-color);
+    background-color: var(--accent-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
 }
 
 .team-social-items + .team-social-items {

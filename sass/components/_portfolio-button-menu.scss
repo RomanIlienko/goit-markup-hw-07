@@ -17,14 +17,18 @@
   transition: background-color var(--time) var(--animation-style),
     color var(--time) var(--animation-style),
     box-shadow var(--time) var(--animation-style);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-active-bcg-clr);
+    color: var(--second-txt-bcg-color);
+    box-shadow: 0px 2px 2px var(--box-shadow-clr),
+      0px 1px 2px var(--box-shadow-clr), 0px 3px 1px var(--box-shadow-clr);
+  }
 }
 
 .portfolio-buttons {
   margin-right: 8px;
-}
-
-.buttons-section :last-child {
-  margin-right: 0;
 }
 
 .buttons-section {
@@ -33,12 +37,8 @@
 
   margin-bottom: 0;
   margin-bottom: 50px;
-}
 
-.button-menu:hover,
-.button-menu:focus {
-  background-color: var(--button-active-bcg-clr);
-  color: var(--second-txt-bcg-color);
-  box-shadow: 0px 2px 2px var(--box-shadow-clr),
-    0px 1px 2px var(--box-shadow-clr), 0px 3px 1px var(--box-shadow-clr);
+  & :last-child {
+    margin-right: 0;
+  }
 }

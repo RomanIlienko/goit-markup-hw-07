@@ -7,21 +7,23 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--time) var(--animation-style);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-active-bcg-clr);
+  }
 }
 
-.social-links:hover,
-.social-links:focus {
-  background-color: var(--button-active-bcg-clr);
-}
+.connection {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.connection-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.connection-items {
-  background-color: var(--bcg-clr-links);
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
+  &-items {
+    background-color: var(--bcg-clr-links);
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
 }

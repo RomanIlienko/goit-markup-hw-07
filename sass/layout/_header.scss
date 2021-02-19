@@ -1,5 +1,5 @@
 .header {
-  &-header {
+  &-page {
     background-color: var(--second-txt-bcg-color);
   }
 
@@ -19,6 +19,24 @@
 
   &-nav {
     display: flex;
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &-icon {
+    margin-right: 10px;
+    fill: currentColor;
   }
 }
 
@@ -88,6 +106,8 @@
   justify-content: space-between;
 }
 
+/* Site-nav*/
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -101,6 +121,14 @@
     font-weight: 500;
     line-height: 1.142px;
     letter-spacing: 0.02em;
+
+    &-title {
+      margin-right: 50px;
+    }
+
+    &-title .link {
+      transition: color var(--time) var(--animation-style);
+    }
   }
 
   &-contacts {
@@ -129,40 +157,13 @@
     letter-spacing: 0.02em;
     transition: color var(--time) var(--animation-style);
   }
-}
 
-.link-title {
-  margin-right: 50px;
-}
+  &-contacts .link + .link {
+    margin-left: 50px;
+  }
 
-.link-title .link {
-  transition: color var(--time) var(--animation-style);
-}
-
-.site-nav-contacts .link + .link {
-  margin-left: 50px;
-}
-
-.site-nav-contacts a:focus,
-.site-nav-contacts a:hover {
-  color: var(--accent-color);
-}
-
-/* SVG Icon */
-.header-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--main-text-color);
-}
-
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-.header-icon {
-  margin-right: 10px;
-  fill: currentColor;
+  & a:focus,
+  & a:hover {
+    color: var(--accent-color);
+  }
 }

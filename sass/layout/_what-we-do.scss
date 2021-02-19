@@ -19,6 +19,11 @@
   &-photos {
     display: block;
   }
+
+  &-section {
+    background-color: var(--second-txt-bcg-color);
+    padding-bottom: 94px;
+  }
 }
 
 .photo {

@@ -20,10 +20,12 @@
   }
 }
 
-.team-social-items + .team-social-items {
-  margin-left: 10px;
-}
+.team-social {
+  &-list {
+    display: flex;
+  }
 
-.team-social-list {
-  display: flex;
+  &-items + .team-social-items {
+    margin-left: 10px;
+  }
 }
